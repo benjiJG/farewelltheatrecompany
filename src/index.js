@@ -41,16 +41,16 @@ const routing = (
     <div className='app'>
       <ul className="nav">
         <li><img src={logo}></img></li>
-        <NavLink className='navlink'><a href='#'>Home</a></NavLink>
-        <NavLink className='navlink'><a href='#'>About</a></NavLink>
-        <NavLink className='navlink'><a href='#'>Meet The Team</a></NavLink>
-        <NavLink className='navlink'><a href='#'>Productions</a></NavLink>
-        <NavLink className='navlink'><a href='#'>FAQ</a></NavLink>
+        <NavLink className='navlink'><Link to='/'>Home</Link></NavLink>
+        <NavLink className='navlink'><Link to='/about'>About</Link></NavLink>
+        <NavLink className='navlink'><Link to='/meet'>Meet The Team</Link></NavLink>
+        <NavLink className='navlink'><Link to='/productions'>Productions</Link></NavLink>
+        <NavLink className='navlink'><Link to='/faq'>FAQ</Link></NavLink>
       </ul>
       <Switch>
         <Route exact path='/' component={App} />
         <Route exact path='/about' component={About} />
-        <Route exact path='/meettheteam' component={MeetTheTeam} />
+        <Route exact path='/meet' component={MeetTheTeam} />
         <Route exact path='/productions' component={Productions} />
         <Route exact path='./faq' component={FAQ} />
       </Switch>
